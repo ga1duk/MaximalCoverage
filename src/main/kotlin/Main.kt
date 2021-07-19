@@ -1,8 +1,8 @@
 fun main() {
-    println(countFee(payType = "Maestro", previousTransfers = 75_000_00, currentTransfer = 10_000_00))
+    //    println(countFee(payType = "Maestro", previousTransfers = 75_000_00, currentTransfer = 10_000_00))
 }
 
-fun countFee(payType: String = "VK Pay", previousTransfers: Int = 0, currentTransfer: Int): Int {
+fun countFee(payType: String = "VK Pay", previousTransfers: Int = 0, currentTransfer: Int = 0): Int {
     val feeInPercentVisaMir = 0.0075
     val feeInPercentMasterMaestro = 0.006
     val minimalFeeVisaMir = 3500

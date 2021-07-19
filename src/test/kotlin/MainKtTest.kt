@@ -20,12 +20,19 @@ class MainKtTest {
     }
 
     @Test
-    fun countFee_DefaultParameters() {
+    fun countFee_DefaultWithOneAttribute() {
         val currentTransfer = 15_000_00
 
         val result = countFee(
             currentTransfer = currentTransfer
         )
+
+        assertEquals(0, result)
+    }
+
+    @Test
+    fun countFee_Default() {
+        val result = countFee()
 
         assertEquals(0, result)
     }
