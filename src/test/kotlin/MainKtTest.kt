@@ -34,7 +34,7 @@ class MainKtTest {
     fun countFee_Default() {
         val result = countFee()
 
-        assertEquals(0, result)
+        assertEquals(100, result)
     }
 
     @Test
